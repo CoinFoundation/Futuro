@@ -52,9 +52,9 @@ UniValue GetNetworkHashPS(int lookup, int height) {
     if (pb == NULL || !pb->nHeight)
         return 0;
 
-    // If lookup is -1, then use blocks since one day.
+    // If lookup is -1, then use blocks since one week.
     if (lookup <= 0)
-        lookup = pb->nHeight % (24*60) + 1;
+        lookup = pb->nHeight % (24*60*7) + 1;
 
     // If lookup is larger than chain, then set it to chain length.
     if (lookup > pb->nHeight)

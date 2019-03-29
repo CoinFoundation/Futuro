@@ -132,3 +132,15 @@ dash-cli
 dashd
 dash-qt
 make
+
+# cf
+.vscode/
+db-4.8.30.NC/
+db4/
+libfuturocoinconsensus.pc
+src/config/futurocoin-config.h
+src/config/futurocoin-config.h.in
+src/futurocoin-cli
+src/futurocoin-tx
+src/futurocoind
+src/test/test_futurocoin
